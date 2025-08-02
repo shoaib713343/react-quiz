@@ -4,12 +4,8 @@ function Question({question, dispatch, answer}) {
     
     return (
         <div>
-            <h2>{question.question}</h2>
-            <div className="options">
-                {question.options.map((option) => (
-                    <Options option={option} dispatch={dispatch} answer={answer}/>
-                ))}
-            </div>
+            <h4>{question.question}</h4>
+            <Options question={question} dispatch={dispatch} answer={answer}/>
         </div>
     )
 }
